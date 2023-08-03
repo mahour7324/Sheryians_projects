@@ -1,0 +1,337 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif};
+    
+    
+html , body{
+    height: 100%;
+    width: 100%;
+}
+/*----------------------------------first--------------------------------------------*/
+.main{
+    color: white;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+.first{
+    text-transform: uppercase;
+    width: 100%;
+    /* height: 100vh; */
+    /* height: 100%; */
+    background-color: black;
+
+    position: relative;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 45px;
+    /* background-color: red; */
+    border-bottom: 0.5px solid rgba(244, 238, 238, 0.66);
+    
+}
+.logo{
+    width: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+#menu:hover{
+    cursor: pointer;
+}
+#menu{
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    border-radius: 40px;
+    border: 2px solid rgba(244, 238, 238, 0.66);
+}
+/*first content----------------*/
+.firstContent{
+    /* margin-top: 80px; */
+    font-size: 3vw;
+    /* padding: 0 20px; */
+    padding: 120px 20px;
+    opacity: .8;
+}
+#toronto{
+    font-size: 1vw;
+    display: flex;
+    justify-content: end;
+
+}
+/* .firstContent p{
+} */
+.designer{
+    padding-left: 8vw;
+    width: 39vw;
+    /* background-color: red; */
+}
+.freelance{
+    font-size: 1vw;
+    display: flex;
+    justify-content: end;
+    margin-top: 80px;
+}
+/*firstFoooter-------------------*/
+.firstFooter{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 10px 20px;
+    /* background-color: red; */
+    font-size: 1vw;
+    
+    
+}
+.firstFooter a{
+    color: white;
+    text-decoration: none;
+}
+/*------------------------------------------------------------------------------*/
+
+
+/*------------second---------------------------------------------------------*/
+.second{
+    width: 100%;
+    /* height: 100vh; */
+    background-color: black;
+    padding-top: 150px;
+    font-size: 3.5vw;
+    text-transform: uppercase;
+
+}
+.plug, .iexper, .hudu{
+    /* display: none; */
+    padding: 5vh 20px;
+    border-top: 2px solid rgba(244, 238, 238, 0.66);;
+    width:90%;
+}
+.plug{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.plug p{
+    font-size: 1.5vh;
+}
+
+/*---------------------------third--------------------------------------------*/
+.third{
+    padding-top: 100px;
+    position: relative;
+    background-color: black;
+    width: 100vw;
+    /* height: 100vh; */
+    /* overflow: hidden; */
+    /* font-size: 1vw; */
+}
+.thirdMiddle{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.third img{
+   width: 300px;
+   height: 300px;
+   border-radius: 50%;
+   /* border: 2px solid white; */
+   margin-left: 20vw;
+}
+.aboutText{
+    padding: 100px 50px;
+    font-size: 1.2vmax;
+    width: 50%;
+}
+.aboutText h5{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.aboutText p{
+    margin-bottom: 20px;
+}
+/* .aboutText a{
+    border-radius: 50px;
+    border: 1px solid white;
+    margin-top: 10px;
+    color: white;
+} */
+/* __________________glow on hover_____________________________________ */
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: transparent;
+    /* backdrop-filter: blur(px); */
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    padding: 1vh 5vh;
+    text-decoration: none;
+
+    
+
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+/* _______________________________________________________ */
+
+
+.subscribe{
+    text-transform: uppercase;
+    line-height: 150%;
+    padding-left: 20px;
+    font-size: 1vw;
+    /* margin-top: 5vh; */
+    padding-bottom: 50px;
+
+}
+.thirdFooter{
+    /* position: absolute; */
+    bottom: 0;
+    padding: 20px 50px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+.tfl{
+    display: flex;
+    gap: 20px;
+}
+.tfr{
+    display: flex;
+    gap: 20px;
+}
+.tfr a{
+    text-decoration: none;
+    color: white;
+}
+
+/* _________________________________Media query______________________________ */
+
+@media (max-width:768px) {
+    .first{
+        height: 70vh;
+    }
+    .third{
+        /* height: 80vh; */
+        padding-top: 50px;
+    }
+    .firstContent{
+        position: absolute;
+        margin-top: 0px;
+        top: 30%;
+        font-size: 7vw;
+        width: 100%;
+        
+    }
+    .firstFooter{
+        font-size: 2vw;
+    }
+    #toronto{
+        position: absolute;
+        right: 15%;
+        font-size: 2vw;
+    }
+    .freelance p {
+        font-size: 2vw;
+    }
+    
+    .plug, .iexper, .hudu{
+        padding: 6vw 20px;
+        font-size: 6vw;
+    }
+    .third img{
+        margin-left: 0px;
+    }
+    .thirdMiddle{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .aboutText{
+        padding: 0 0 ;
+    }
+    .subscribe{
+        font-size: 2vw;
+        padding-top: 5vh;
+    }
+    
+    .thirdFooter{
+        padding: 10px 13px;
+        display: flex;
+        justify-content: space-around;
+        border-top: 0.5px solid white;
+    }
+    .tfl{
+        display: none;
+        
+    }
+        
+
+}
