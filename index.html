@@ -5,46 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project1</title>
-    <link rel="stylesheet" href="index.css" />
-  </head>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/mouse.css" />
+    <link rel="stylesheet" href="css/images.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+  </head> -->
+  <link rel="stylesheet" href="css/locomotive.css">
   <body>
+    <div class="ball"></div>
     <div class="main">
       <div class="first">
         <nav>
-          <a href="#" >Logo</a>
-          <button id="menu">menu+</button>
+          <a href="#">Logo</a>
+          <a href="#" id="menu" class="glow-on-hover" >menu+</a>
         </nav>
         <div class="firstContent">
-          <div class="product"><h1>product</h1></div>
-          <div class="designer">
-            <h1>designer</h1>
-            <p id="toronto">based in toronto</p>
+          <div class="outer">
+            <div class="product innerHidden"><h1>product</h1></div>
+
           </div>
-          <div class="freelance">
-            <p>
+          <div class="designer outer">
+            <h1 class="innerHidden">designer</h1>
+            <p id="toronto" class="innerHidden">based in toronto</p>
+          </div>
+          <div class="freelance outer">
+            <p class="innerHidden">
               available for freelance <br />
               making this on 2 aug/2023
             </p>
           </div>
         </div>
         <div class="firstFooter">
-          <a href="#">previously worked yml</a>
-          <a href="#">protope ambassador</a>
-          <a href="#">->-></a>
+          <a href="#" class="star">previously worked yml</a>
+          <a href="#" class="star" >protope ambassador</a>
+          <a href="#" class="star">↓↓</a>
         </div>
         <!-- <video src="./watermarked_preview.mp4" autoplay loop muted></video> -->
       </div>
       <div class="second">
-        <div class="plug">
+        <div class="plug  elem">
+          <img src="./images/page2image1.png" alt="">
           <h1>the plug</h1>
           <p>2023</p>
         </div>
-        <div class="iexper"><h1>ixperience</h1></div>
-        <div class="hudu"><h1>hudu</h1></div>
+        <div class="iexper  elem">
+          <img src="./images/page2image2.png" alt="">
+
+          <h1>ixperience</h1></div>
+        <div class="hudu  elem">
+          <img src="./images/page2image3.png" alt="">
+
+          <h1>hudu</h1></div>
       </div>
       <div class="third">
         <div class="thirdMiddle">
-          <img src="./image2.jpg" alt="" />
+          <img src="./images/image2.jpg" alt="" />
           <div class="aboutText">
             <h5>About me</h5>
             <p>
@@ -55,7 +73,7 @@
               officiis distinctio maiores in similique fugit itaque deserunt?
               Quam mollitia laboriosam tempora enim obcaecati a nesciunt.
             </p>
-            <a href="#" class="glow-on-hover">Let's talk</a>
+            <a href="#" class="glow-on-hover talk">Let's talk</a>
           </div>
         </div>
         <div class="subscribe">
@@ -63,21 +81,34 @@
           <h4>subscribe to my youtube channel</h4>
         </div>
         <div class="thirdFooter">
-            <div class="tfl">
-                <h5>2023</h5>
-                <h5>0.00 AMEST</h5>
-            </div>
-            <div class="tfr">
-                <a href="#"><h5>youtube</h5></a>
-                <a href="#"><h5>instagram</h5></a>
-                <a href="#"><h5>facebook</h5></a>
-                <a href="#"><h5>twitter</h5></a>
-                
-            </div>
+          <div class="tfl">
+            <h5>2023</h5>
+            <h5>0.00 AMEST</h5>
+          </div>
+          <div class="tfr">
+            <a href="#" class="glow-on-hover"><h5>youtube</h5></a>
+            <a href="#" class="glow-on-hover"><h5>instagram</h5></a>
+            <a href="#" class="glow-on-hover"><h5>facebook</h5></a>
+            <a href="#" class="glow-on-hover"><h5>twitter</h5></a>
+          </div>
         </div>
       </div>
     </div>
-
-    <script src="script.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="javascript/loco.js"></script>
+    <script src="javascript/script.js"></script>
+    <script src="javascript/animation.js"></script>
   </body>
 </html>

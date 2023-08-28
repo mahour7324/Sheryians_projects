@@ -1,0 +1,10 @@
+.ball {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    pointer-events: none;
+    z-index: 99999;
+}
